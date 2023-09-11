@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS memes slider</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="main_container">
         <div class="slider">
-            <img src="./images/image1.jpeg" alt="image1">
-            <img src="./images/image2.jpeg" alt="image1">
-            <img src="./images/image3.jpeg" alt="image1">
-            <img src="./images/image4.jpeg" alt="image1">
+            <img src="./images/image1.jpeg" alt="image1" class="image1">
+            <img src="./images/image2.jpeg" alt="image1" class="image2">
+            <img src="./images/image3.jpeg" alt="image1" class="image3">
+            <img src="./images/image4.jpeg" alt="image1" class="image4">
         </div>
-        <div class="button_area"><button class="slider_button"></button></div>
-        <div class="button_area"><button class="slider_button"></button></div>
-        <div class="button_area"><button class="slider_button"></button></div>
-        <div class="button_area"><button class="slider_button"></button></div>
+        <div class="text_and_buttons">
+            <h2 class="description">allall</h2>
+            <div class="buttons">
+                <div class="button_area"><input checked  type="radio" name="image" class="slider_button button1"></input></div>
+                <div class="button_area"><input type="radio" name="image" class="slider_button button2"></input></div>
+                <div class="button_area"><input type="radio" name="image" class="slider_button button3"></input></div>
+                <div class="button_area"><input type="radio" name="image" class="slider_button button4"></input></div>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
