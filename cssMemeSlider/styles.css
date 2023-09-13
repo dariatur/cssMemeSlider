@@ -6,85 +6,9 @@ body{
 }
 
 .main_container{
-    width: 55rem;
-    height: 100vh;
+    width: 50rem;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* align-items: center; */
     overflow: hidden;
-}
-
-.slider{
-    display: flex;
-    width: 400%;
-    height: 70vh;
-    overflow: hidden;
-    /* border: 0.025rem solid white; */
-    /* box-shadow: 0px 0px 46px 11px rgba(255, 255, 255, 0.587); */
-    
-    margin-bottom: 1rem;
-    /* transform: translateX(10%) ; */
-}
-
-.image{
-    width: 25%;
-    transition:all 0.8s ease;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 2%;
-}
-
-.text_and_buttons{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.description{
-    color: white;
-}
-
-.buttons{
-    display: flex;
-    gap: 0.625rem;
-}
-
-.button_area{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-}
-
-.slider_button{
-    appearance: none;
-    border: none;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
-    cursor: pointer;
-    background-color: white;
-}
-
-.slider_button:hover{
-    appearance: none;
-    background-color: rgb(240, 88, 199);
-    transition: 0.5s;
-}
-
-.slider_button:checked{
-    appearance: none;
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 0.4rem solid rgb(240, 88, 199);
-    transition: 0.5s;
 }
 
 .radio_btn{
@@ -93,25 +17,99 @@ img{
     margin: 0;
 }
 
-.radio_button:checked .label{
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 0.4rem solid rgb(240, 88, 199);
-    transition: 0.5s;
+.slider{
+    display: flex;
+    flex-direction: column;
+    width: 200rem;
+    height: 35rem;
+    display: flex;
+    transition: all 0.8s ease;
 }
 
-#radio2:checked ~ .img1{
-    margin-left: -25%;
+.images{
+    display: flex;
 }
 
-#radio3:checked ~ .img1{
-    margin-left: -50%;
+.image{
+    width: 25%;
 }
 
-#radio4:checked ~ .img1{
-    margin-left: -75%;
+img{
+    width: 100%;
+    height: 30rem;
 }
 
-#radio2:checked .description{
+.slider_button{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#radio2:checked ~ .slider{
+    transform: translateX(-25%);
+}
+
+#radio3:checked ~ .slider{
+    transform: translateX(-50%);
+}
+
+#radio4:checked ~ .slider{
+    transform: translateX(-75%);
+}
+
+.buttons{
+    display: flex;
+    width: 200px;
+}
+
+.captions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.caption1,.caption2, .caption3, .caption4{
+    width: 25%;
+} 
+
+
+/* #radio2:checked ~ .captions h2:nth-child(1){
     visibility: hidden;
+    width: 0;
+    height: 0;
 }
+
+#radio2:checked ~ .captions h2:nth-child(2){
+    visibility: visible;
+}
+
+#radio3:checked ~ .captions h2:nth-child(2){
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#radio3:checked ~ .captions h2:nth-child(1){
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#radio3:checked ~ .captions h2:nth-child(3){
+    visibility: visible;
+}
+
+#radio4:checked ~ .captions h2:nth-child(-n+3){
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#radio4:checked ~ .captions h2:nth-child(4){
+    visibility: visible;
+} */
