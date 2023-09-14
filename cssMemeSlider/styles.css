@@ -1,0 +1,201 @@
+body{
+    background-color: rgb(237, 155, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container{
+    width: 33rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.radio_btn{
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    width: 400%;
+    height: 80%;
+    transition: transform 0.8s ease-in;
+    margin-bottom: 2%;
+}
+
+.images{
+    display: flex;
+    height: 100%;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 70%; 
+    transform: translateY(-150%);
+}
+
+.button_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.captions_wrapper{
+    width: 50%;
+    overflow: hidden;
+    color: white;
+    /* transform: translateY(120%); */
+}
+
+.captions{
+    display: flex;
+    width: 400%;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.8s ease-in;
+} 
+
+.caption{
+    width:25%;
+}
+
+.slider_button{
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: palevioletred;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.slider_button:hover{
+    background-color: white;
+    transition: 1s;
+}
+
+#radio2:checked ~ .slider{
+    transform: translateX(-25%);
+}
+
+#radio2:checked ~ .captions_wrapper .captions:nth-child(1){
+    transform: translateX(-25%);
+}
+
+#radio3:checked ~ .slider{
+    transform: translateX(-50%);
+}
+
+#radio3:checked ~ .captions_wrapper .captions:nth-child(1){
+    transform: translateX(-50%);
+}
+
+#radio4:checked ~ .slider{
+    transform: translateX(-75%);
+}
+
+#radio4:checked ~ .captions_wrapper .captions:nth-child(1){
+    transform: translateX(-75%);
+}
+
+#radio1:checked ~ .buttons label:nth-child(1) .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid palevioletred;
+    transition: 0.5s;
+}
+
+#radio1:checked ~ .buttons label:nth-child(1):hover .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid white;
+    transition: 0.5s;
+}
+
+#radio2:checked ~ .buttons label:nth-child(2) .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid palevioletred;
+    transition: 0.5s;
+}
+
+#radio2:checked ~ .buttons label:nth-child(2):hover .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid white;
+    transition: 0.5s;
+}
+
+#radio3:checked ~ .buttons label:nth-child(3) .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid palevioletred;
+    transition: 0.5s;
+}
+
+#radio3:checked ~ .buttons label:nth-child(3):hover .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid white;
+    transition: 0.5s;
+}
+
+#radio4:checked ~ .buttons label:nth-child(4) .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid palevioletred;
+    transition: 0.5s;
+}
+
+#radio4:checked ~ .buttons label:nth-child(4):hover .slider_button:nth-child(1){
+    background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.4rem solid white;
+    transition: 0.5s;
+}
+
+@media(max-width:591px){
+    .main_container{
+        width: 90%;
+    }
+
+    .slider{
+        height: 70%;
+    }
+
+    .buttons{
+        transform: translateX(125%) translateY(-170%);
+        margin: 0;
+    }
+
+    .captions_wrapper{
+        transform: translateY(50%);
+    }
+}
