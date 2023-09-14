@@ -6,7 +6,7 @@ body{
 }
 
 .main_container{
-    width: 35rem;
+    width: 33rem;
     height: 100vh;
     overflow: hidden;
 }
@@ -179,4 +179,23 @@ img{
     background-color: transparent;
     border: 0.4rem solid white;
     transition: 0.5s;
+}
+
+@media(max-width:591px){
+    .main_container{
+        width: 90%;
+    }
+
+    .slider{
+        height: 70%;
+    }
+
+    .buttons{
+        transform: translateX(125%) translateY(-170%);
+        margin: 0;
+    }
+
+    .captions_wrapper{
+        transform: translateY(50%);
+    }
 }
